@@ -16,7 +16,7 @@ Naam, for pruning and distilling Large Language Models (LLMs) using adaptive kno
 ## Usage
 
 ### Basic Example
-
+```python
     from naam import ModelPruner, KnowledgeDistiller, create_student_model
     from transformers import AutoModelForCausalLM, AutoTokenizer
 
@@ -32,7 +32,7 @@ Naam, for pruning and distilling Large Language Models (LLMs) using adaptive kno
 
     distiller = KnowledgeDistiller(teacher_model, student_model)
     trained_student = distiller.train(dataloader, epochs=3)
-
+```
 ## How It Works
 
 1. **Activation Collection**: The system analyzes neuron activations in the teacher model to identify important pathways.
