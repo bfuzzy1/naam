@@ -511,7 +511,7 @@ def main():
     )
     
     # test models
-    test_prompt = "Hi "
+    test_prompt = "Why is the sky blue?"
     inputs = tokenizer(
         test_prompt,
         return_tensors="pt",
